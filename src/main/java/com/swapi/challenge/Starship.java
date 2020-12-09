@@ -31,4 +31,13 @@ public class Starship extends Vehicle{
         this.hyperdrive_rating = hyperdrive_rating;
         this.MGLT=MGLT;
     }
+
+    @Override
+
+    public String toString() {
+        return "Starship{" + super.getName() +  // would call all super getter functions.
+                " MGLT='" + MGLT + '\'' +
+                ", hyperdrive_rating='" + hyperdrive_rating + '\'' +
+                '}';
+    }
 }
